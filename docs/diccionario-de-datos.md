@@ -91,3 +91,21 @@ Comprobante electrónico emitido a partir de una liquidación aprobada. Un compr
 2. **Tarifa a la fecha del servicio:** la liquidación toma la tarifa vigente en `fecha_hora_inicio`.
 3. **Sin duplicados al sincronizar:** `uuid_dispositivo` es único.
 4. **Las excepciones quedan registradas:** tarifas especiales con `id_cliente`; ajustes con `ajuste_manual` y `motivo_ajuste`.
+
+## HISTORIAL_ESTADO_PARTE (agregado en la Entrega N.º 4)
+
+Registro de cada cambio de estado de un parte. Surge del control: sin esta entidad no se pueden medir el tiempo de validación (IP2) ni la proporción de partes observados (IP3). Lo genera el sistema en cada transición; nadie lo modifica.
+
+| Campo | Tipo | Restricciones / valores | Descripción |
+|---|---|---|---|
+| id_historial | Integer | Clave primaria; autoincremental | Identificador del registro. |
+| id_parte | Integer | FK a PARTE_SERVICIO; obligatorio | Parte que cambió de estado. |
+| estado_anterior | String(12) | Nulo en el primer registro | Estado de origen de la transición. |
+| estado_nuevo | String(12) | BORRADOR, PENDIENTE, VALIDADO u OBSERVADO | Estado de destino. |
+| fecha_hora | DateTime | Obligatorio; lo asigna el sistema | Momento del cambio. |
+| legajo | Integer | Obligatorio | Persona que provocó el cambio (tripulante o validador). |
+| motivo | String(150) | Obligatorio si estado_nuevo es OBSERVADO | Motivo de la observación. |
+
+Relación: PARTE_SERVICIO – HISTORIAL_ESTADO_PARTE, 1 a N.
+
+5. **Cada transición queda registrada:** ningún parte cambia de estado sin un registro en HISTORIAL_ESTADO_PARTE.
