@@ -8,7 +8,7 @@ Tecnicatura Universitaria en Programación a Distancia (TUPaD) · Universidad Te
 | **Integrante** | Joaquin Dalmiro Lallana (equipo técnico unipersonal) |
 | **Docente titular** | Bruno, Carolina |
 | **Docente tutor** | Varberde Thompson, Francisco Alejandro |
-| **Tablero del backlog** | GitHub Projects: [Backlog TPI La Barquita](PENDIENTE: agregar el enlace del proyecto) |
+| **Tablero del backlog** | GitHub Projects: [Backlog TPI La Barquita](https://github.com/users/joaquinlallana/projects/2) |
 
 ## Descripción del sistema
 
