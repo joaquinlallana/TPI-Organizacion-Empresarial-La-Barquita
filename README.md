@@ -33,7 +33,7 @@ Este repositorio aloja la **documentación técnica** del proyecto. La codificac
 | [`docs/02-historias-de-usuario.md`](docs/02-historias-de-usuario.md) | Las tres historias de usuario con criterios de aceptación y prioridad. |
 | [`docs/03-control-y-auditoria.md`](docs/03-control-y-auditoria.md) | Indicadores de control, estándares de desempeño y responsables de la auditoría. |
 | [`docs/diccionario-de-datos.md`](docs/diccionario-de-datos.md) | Diccionario de datos del módulo (Entrega N.º 3, con el ajuste de la Entrega N.º 4). |
-| [`docs/entregas/`](docs/entregas/) | Entregas N.º 1, 2 y 3 en PDF. |
+| [`docs/entregas/`](docs/entregas/) | Documento integrado de las Entregas N.º 1 a 4 en PDF. |
 | [`CHANGELOG.md`](CHANGELOG.md) | Cambios relevantes por versión de la documentación. |
 
 ## Forma de trabajo
@@ -45,7 +45,7 @@ Este repositorio aloja la **documentación técnica** del proyecto. La codificac
 
 ## Declaración de Uso de IA
 
-En esta entrega usé un asistente de inteligencia artificial (Claude, de Anthropic) dentro de un proyecto configurado para la materia. A continuación detallo qué le pedí, por qué lo pedí de esa forma y qué corregí.
+En las cuatro entregas trabajé con un asistente de inteligencia artificial (Claude, de Anthropic) dentro de un proyecto configurado para la materia. Su función fue la de un asesor, un ayudante en la investigación y un auditor de la estructura del proyecto: discutió conmigo alternativas de análisis y de modelado, colaboró en el relevamiento de información pública que después verifiqué en las fuentes, y controló la coherencia entre las entregas. También asistió en tareas operativas: propuso borradores y primeras versiones de algunos diagramas y tablas que revisé y ajusté, y ejecutó a mi pedido las ramas, los commits, los issues y los Pull Requests de este repositorio; por eso figura como coautor en los commits. A continuación detallo qué le pedí en la última entrega, por qué lo pedí de esa forma y qué corregí. La declaración completa está al final del documento integrado.
 
 ### Prompts utilizados y justificación
 
@@ -61,6 +61,10 @@ En esta entrega usé un asistente de inteligencia artificial (Claude, de Anthrop
 - **Estados del tablero.** Mostrar las historias como "Listo" contradecía mi propio cronograma, que empieza la codificación el 31/12/2026. Por eso en el tablero avanzan las tareas de especificación y las historias quedan "Por hacer" en cuanto a su desarrollo.
 - **Notación BPMN.** Verifiqué el diagrama contra las reglas de notación BPMN: flujo de izquierda a derecha, compuertas sin la X y con la pregunta abajo, salidas etiquetadas, una tarea de evaluación antes de cada decisión y flujos de mensaje solo entre pools. El evento de espera de conexión se dejó como evento intermedio sin especificar.
 - **Estándares de control.** Los valores que no salen de las metas de la Entrega N.º 2 están marcados como propuestos, porque no tengo datos reales de La Barquita para fijarlos.
-- **Correcciones propias.** Sobre lo que propuso el asistente, tomé decisiones propias: elegí draw.io para el BPMN y GitHub Projects para el tablero; pedí reescribir el trabajo sin referencias al material de estudio; modifiqué el formato del documento de la entrega; y, como hice el trabajo solo, decidí no incluir a otra persona como revisora. Por eso la revisión del Pull Request del BPMN la hice yo con la lista de verificación, y ajusté los textos para que no afirmaran una revisión de pares que no existió.
+- **Correcciones propias.** Sobre lo que propuso el asistente, tomé decisiones propias: elegí draw.io para el BPMN y GitHub Projects para el tablero; modifiqué el formato del documento de la entrega; y, como hice el trabajo solo, decidí no incluir a otra persona como revisora. Por eso la revisión del Pull Request del BPMN la hice yo con la lista de verificación, y ajusté los textos para que no afirmaran una revisión de pares que no existió.
+
+### Mis decisiones
+
+Las decisiones que definen el trabajo son mías: la elección del caso, la detección de la brecha y la definición del módulo; el análisis de impacto sobre las áreas; los factores del FODA; el objetivo, los valores de las metas y el orden y la duración de las tareas; la ubicación de cada área en el organigrama; el proceso a modelar y la revisión del diagrama; la elección de las herramientas; el formato del documento y la integración final de las cuatro entregas.
 
 La asistencia por IA no me exime de la veracidad ni de la coherencia conceptual del trabajo: cualquier error del modelo lo asumo como propio.

@@ -1,5 +1,11 @@
 # Registro de cambios
 
+## Documento integrado de las Entregas N.º 1 a 4 (noviembre 2026)
+
+- Las cuatro entregas se unificaron en un único documento, con una sola declaración de uso de IA y las fuentes al final.
+- Se reemplazaron los PDF de las Entregas N.º 1, 2 y 3 por el documento integrado, porque esas versiones quedaron superadas por las correcciones de la integración (numeración, figuras, redacción y formato).
+- README: la Declaración de Uso de IA se alineó con la del documento integrado.
+
 ## Entrega N.º 4 · Procesos, trabajo colaborativo y control (octubre 2026)
 
 - Modelo BPMN del proceso de registro, liquidación y facturación, en tres fases.
