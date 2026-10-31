@@ -40,7 +40,7 @@ Este repositorio aloja la **documentación técnica** del proyecto. La codificac
 
 - **Ramas.** `main` contiene solo documentación revisada. Cada cambio se hace en una rama secundaria con prefijo según su tipo: `docs/` para documentación, `feature/` para una funcionalidad o un cambio de diseño, `fix/` para correcciones.
 - **Commits.** Mensajes en español, con un verbo en infinitivo y lo que cambia (por ejemplo: `Agregar modelo BPMN de la fase de facturación`). Cuando corresponde, el mensaje referencia el *issue* (`#3`).
-- **Pull Requests.** Todo cambio entra a `main` mediante un Pull Request que explica qué se cambió, por qué y cómo revisarlo (plantilla en `.github/pull_request_template.md`). El PR del modelo BPMN tuvo revisión de pares.
+- **Pull Requests.** Todo cambio entra a `main` mediante un Pull Request que explica qué se cambió, por qué y cómo revisarlo (plantilla en `.github/pull_request_template.md`). Como el equipo es unipersonal, la revisión de cada PR la hace el autor con la lista de verificación de la plantilla; no hubo revisión de un par (debilidad D1 de la Entrega N.º 2).
 - **Backlog.** Las historias de usuario y las tareas son *issues* del repositorio, organizados en el tablero de GitHub Projects con los estados **Por hacer**, **En progreso** y **Listo**.
 
 ## Declaración de Uso de IA
@@ -51,7 +51,7 @@ En esta entrega usé un asistente de inteligencia artificial (Claude, de Anthrop
 
 | Prompt | Qué pedía | Por qué lo formulé así |
 |---|---|---|
-| Instrucciones del proyecto ("Asistente universitario para Trabajo Práctico Integrador") | Trabajar por etapas: comprender el material, descomponer la consigna en una tabla, definir una estrategia y recién después redactar; separar el contenido de la cátedra de la información externa; revisar el borrador como profesor, investigador y corrector. | Sin estas reglas, el asistente tiende a redactar enseguida y a mezclar definiciones generales con las del material. Obligarlo a analizar antes de escribir y a marcar lo externo me permite controlar de dónde sale cada afirmación. |
+| Instrucciones del proyecto ("Asistente universitario para Trabajo Práctico Integrador") | Trabajar por etapas: comprender la consigna, descomponerla en una tabla, definir una estrategia y recién después redactar; señalar qué información es externa; revisar el borrador como profesor, investigador y corrector. | Sin estas reglas, el asistente tiende a redactar enseguida y a mezclar definiciones de distinto origen. Obligarlo a analizar antes de escribir y a marcar lo externo me permite controlar de dónde sale cada afirmación. |
 | Consigna de la Entrega N.º 4 (PDF) más las tres entregas anteriores | Analizar la consigna y detectar ambigüedades antes de producir. | Quería que el trabajo continuara las decisiones ya tomadas (La Barquita, el módulo, el organigrama y el diccionario) en lugar de empezar de cero. |
 | "Creá el documento en Google Docs; el BPMN hacelo en draw.io; el tablero en GitHub Projects, siempre que no haya indicación de usar Jira" | Definir las herramientas de la entrega. | Elegí draw.io porque es donde vengo trabajando los diagramas, y GitHub Projects porque la consigna permite Jira o GitHub Projects y este último se integra con los *issues* y los Pull Requests del mismo repositorio. |
 
@@ -59,7 +59,7 @@ En esta entrega usé un asistente de inteligencia artificial (Claude, de Anthrop
 
 - **Historias de usuario.** La consigna habla de tres historias "previamente definidas", pero en mis entregas anteriores no estaban escritas en formato formal (solo figuraba la tarea A4 del Gantt). El asistente lo señaló y las definimos en esta entrega; lo dejo dicho en lugar de presentarlas como si ya existieran.
 - **Estados del tablero.** Mostrar las historias como "Listo" contradecía mi propio cronograma, que empieza la codificación el 31/12/2026. Por eso en el tablero avanzan las tareas de especificación y las historias quedan "Por hacer" en cuanto a su desarrollo.
-- **Notación BPMN.** Verifiqué el diagrama contra las reglas del apunte: flujo de izquierda a derecha, compuertas sin la X y con la pregunta abajo, salidas etiquetadas, una tarea de evaluación antes de cada decisión y flujos de mensaje solo entre pools. El evento de espera de conexión se dejó como evento intermedio sin especificar porque es el tipo que presenta el material.
+- **Notación BPMN.** Verifiqué el diagrama contra las reglas de notación BPMN: flujo de izquierda a derecha, compuertas sin la X y con la pregunta abajo, salidas etiquetadas, una tarea de evaluación antes de cada decisión y flujos de mensaje solo entre pools. El evento de espera de conexión se dejó como evento intermedio sin especificar.
 - **Estándares de control.** Los valores que no salen de las metas de la Entrega N.º 2 están marcados como propuestos, porque no tengo datos reales de La Barquita para fijarlos.
 - **Correcciones propias.** [COMPLETAR: qué cambiaste vos sobre lo que propuso el asistente, por ejemplo una tarea del BPMN, el texto de una historia o un estándar.]
 
