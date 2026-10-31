@@ -33,7 +33,7 @@ Modelo del proceso que el módulo va a transformar: desde que el cliente confirm
 | Objeto de datos y almacén | Parte de servicio [BORRADOR]; Base de datos del módulo (TARIFA, COMPROBANTE). |
 | Anotaciones | Regla de no duplicación (uuid del dispositivo) y regla de respaldo obligatorio. |
 
-Convenciones de la cátedra aplicadas: el flujo va de izquierda a derecha; las compuertas exclusivas se dibujan sin la X y con la pregunta abajo; todas las salidas de una compuerta tienen etiqueta; cada decisión tiene antes una tarea que la evalúa; no se dibujan compuertas convergentes cuando no evitan que una compuerta sea a la vez divergente y convergente.
+Convenciones aplicadas: el flujo va de izquierda a derecha; las compuertas exclusivas se dibujan sin la X y con la pregunta abajo; todas las salidas de una compuerta tienen etiqueta; cada decisión tiene antes una tarea que la evalúa; no se dibujan compuertas convergentes cuando no evitan que una compuerta sea a la vez divergente y convergente.
 
 ## Excepciones del proceso
 
