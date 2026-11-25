@@ -32,6 +32,7 @@ Este repositorio aloja la **documentación técnica** del proyecto. La codificac
 | [`bpmn/`](bpmn/) | Diagrama editable en draw.io (`.drawio`, tres páginas) e imágenes PNG por fase. |
 | [`docs/02-historias-de-usuario.md`](docs/02-historias-de-usuario.md) | Las tres historias de usuario con criterios de aceptación y prioridad. |
 | [`docs/03-control-y-auditoria.md`](docs/03-control-y-auditoria.md) | Indicadores de control, estándares de desempeño y responsables de la auditoría. |
+| [`docs/04-presentacion-coloquio.md`](docs/04-presentacion-coloquio.md) | Estructura y enlace de la presentación para el Coloquio Integrador, con preguntas probables. |
 | [`docs/diccionario-de-datos.md`](docs/diccionario-de-datos.md) | Diccionario de datos del módulo (Entrega N.º 3, con el ajuste de la Entrega N.º 4). |
 | [`docs/entregas/`](docs/entregas/) | Documento integrado de las Entregas N.º 1 a 4 en PDF. |
 | [`CHANGELOG.md`](CHANGELOG.md) | Cambios relevantes por versión de la documentación. |
