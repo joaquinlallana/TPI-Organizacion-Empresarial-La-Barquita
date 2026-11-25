@@ -3,6 +3,7 @@
 ## Presentación para el Coloquio Integrador (noviembre 2026)
 
 - Se agregó `docs/04-presentacion-coloquio.md` con la estructura de la presentación, los tiempos estimados, el enlace a las diapositivas y las preguntas probables.
+- La presentación definitiva se incorporó como `docs/04-presentacion-coloquio.pptx` y reemplazó al documento `.md`.
 
 ## Corrección posterior a la devolución del TPI (noviembre 2026)
 
