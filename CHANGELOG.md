@@ -1,5 +1,9 @@
 # Registro de cambios
 
+## Corrección posterior a la devolución del TPI (noviembre 2026)
+
+- BPMN, fase 1: el evento *Conexión recuperada* pasa de evento intermedio sin especificar a **evento intermedio condicional**, con la condición "hay conexión con el servidor". Se actualizaron el archivo draw.io, la imagen `bpmn-f1.png` y la tabla de elementos de `docs/01-proceso-bpmn.md`.
+
 ## Documento integrado de las Entregas N.º 1 a 4 (noviembre 2026)
 
 - Las cuatro entregas se unificaron en un único documento, con una sola declaración de uso de IA y las fuentes al final.
