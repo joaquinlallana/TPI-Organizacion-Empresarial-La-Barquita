@@ -21,7 +21,7 @@ Modelo del proceso que el módulo va a transformar: desde que el cliente confirm
 |---|---|
 | Evento de inicio de mensaje | *Pedido confirmado en la app* (lo dispara el Cliente). |
 | Evento de fin de mensaje | *Comprobante enviado al cliente*. |
-| Evento intermedio sin especificar | *Conexión recuperada*: el proceso espera hasta que el dispositivo vuelve a tener señal. |
+| Evento intermedio condicional | *Conexión recuperada*: el proceso espera hasta que se cumple la condición "hay conexión con el servidor". Es condicional y no de mensaje porque nadie lo envía: es un cambio del entorno. Mientras tanto, el parte queda en BORRADOR en el dispositivo, identificado por su `uuid_dispositivo`. |
 | Eventos intermedios de enlace | A: parte registrado; B: liquidación aprobada. |
 | Tarea de usuario | Asignar, Cargar, Revisar, Corregir, Aprobar. |
 | Tarea manual | Prestar el servicio. |
@@ -39,7 +39,7 @@ Convenciones aplicadas: el flujo va de izquierda a derecha; las compuertas exclu
 
 | Compuerta | Camino estándar | Excepción | Origen en entregas anteriores |
 |---|---|---|---|
-| ¿Hay conexión? | Sí: el parte se registra en el servidor. | No: se guarda en el dispositivo y se sincroniza cuando vuelve la señal. | Amenaza A4 y debilidad D4 (E2); meta M2; campo `uuid_dispositivo` (E3). |
+| ¿Hay conexión? | Sí: el parte se registra en el servidor. | No: se guarda en el dispositivo y el proceso espera en el evento condicional *Conexión recuperada*; al cumplirse, se sincroniza sin duplicados. | Amenaza A4 y debilidad D4 (E2); meta M2; campo `uuid_dispositivo` (E3). |
 | ¿Parte completo y con respaldo? | Sí: el parte queda VALIDADO. | No: queda OBSERVADO y la tripulación lo corrige. | Cadena crítica de residuos peligrosos (E1); regla de negocio 1, `exige_respaldo` (E3). |
 | ¿Importe correcto? | Correcto: se aprueba. | Requiere ajuste: se registra el ajuste y su motivo. | Regla de negocio 4, `ajuste_manual` y `motivo_ajuste` (E3). |
 | ¿CAE otorgado? | Otorgado: se registra el comprobante y se envía. | Rechazado: Facturación corrige los datos y se vuelve a solicitar. | Debilidad D3 (E2); meta M4; estado RECHAZADO del comprobante (E3). |
