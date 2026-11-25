@@ -1,5 +1,9 @@
 # Registro de cambios
 
+## Presentación para el Coloquio Integrador (noviembre 2026)
+
+- Se agregó `docs/04-presentacion-coloquio.md` con la estructura de la presentación, los tiempos estimados, el enlace a las diapositivas y las preguntas probables.
+
 ## Corrección posterior a la devolución del TPI (noviembre 2026)
 
 - BPMN, fase 1: el evento *Conexión recuperada* pasa de evento intermedio sin especificar a **evento intermedio condicional**, con la condición "hay conexión con el servidor". Se actualizaron el archivo draw.io, la imagen `bpmn-f1.png` y la tabla de elementos de `docs/01-proceso-bpmn.md`.
